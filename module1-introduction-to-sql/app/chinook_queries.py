@@ -5,7 +5,7 @@ import sqlite3
 
 # construct a path t qo wherever your database exists
 #DB_FILEPATH = "chinook.db"
-module1-introduction-to-sql\app\chinook_queries.py
+DB_FILEPATH = os.path.join(os.path.dirname(__file__), "..","data", "chinook.db")
 
 connection = sqlite3.connect(DB_FILEPATH)
 connection.row_factory = sqlite3.Row # allow us to reference rows as dictionaries
